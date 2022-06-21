@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--bg-blue);
+}
+
+.container-all{
+    padding-top: 100px;
+}
+
+h2{
+    padding-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+
+#cont-txt-img{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    padding: 40px;
+    width: 100%;
+    height: fit-content;
+}
+
+
+.cont-txt{
+    width: 100%;
+    margin-right: 20px;
+}
+
+
+.h3_title{
+    color: white;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.425);
+    margin-bottom: 50px;
+
+    padding: 20px;
+    
+    border-radius: 20px;
+}
+
+#p{
+    display: block;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+#big-span{
+    display: block;
+    color: white;
+    font-size: 30px;
+}
+
+.litle-span{
+    display: block;
+    color: white;
+    font-size: 30px;
+}
+
+
+.cont-img{
+    width: 100%;
+    margin-left: 20px;
+}
+
+
+.contenant{
+    position: relative;
+    text-align: center;
+    
+}
+
+.txt-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.aContact{
+    background: linear-gradient(to right, rgb(123, 123, 255), rgb(255, 87, 87));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.img{
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+
+@media screen and (max-width: 900px){
+    #cont-txt-img{
+        flex-wrap: wrap-reverse;
+    }
+
+} 
+
+
+@media screen and (max-width: 1400px){
+
+    .txt-center{
+        font-size: 30px;
+        
+    }
+
+}
+
+@media screen and (max-width: 1100px){
+    .txt-center{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    .txt-center{
+        font-size: 30px;
+    }
+    .cont-img{
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (max-width: 570px){
+    .txt-center{
+        font-size: 20px;
+    }
+
+}

@@ -1,0 +1,85 @@
+extends ../layout
+
+
+
+block link
+    link(rel='stylesheet', href='/stylesheets/admin.css')
+
+
+block content
+    include ../partials/navigation
+
+
+    main
+        h1(id='h1') Administration
+        section(class='admin')
+            form(class='cont-admins' method="POST")
+
+                section(class='cont-admin') 
+                    h3  Présentation
+                    
+                    div(class='cont-input') 
+                        label(for="titlePageInput")
+                        input(type="text" placeholder='titlePage' name="titlePage")
+
+                        label(for="text1Input")
+                        input(type="text" placeholder='text1' name="text1")
+
+                        label(for="text1Input")
+                        input(type="text" placeholder='text2CatchPhrase' name='text2CatchPhrase')
+
+                        label(for="text1Input")
+                        input(type="text" placeholder='text2' name='texte2')
+
+                        label(for="text1Input")
+                        input(type="text" placeholder='text3' name='text3')
+                    
+
+                section(class='cont-admin')
+                    h3 Temps de réponse 
+                    
+                    div(class='cont-input')
+                        input(type="text" placeholder='timeNumber' name='timeNumber')
+                        input(type="text" placeholder="timeUnit" name='timeUnit')
+
+
+                section(class='cont-admin')
+                    h3 Contact 
+                    
+                    div(class="cont-input")
+                        input(type="text" placeholder='number' name="number")
+                        input(type="text" placeholder="mail" name="mail")
+                        
+
+                section(class='cont-admin')
+                    h3 Affichage 
+                        
+                    div(class="cont-input")
+                        p afficher les avis client ?
+                        input(type="radio" name="opinionBool" value=true)
+                        label Oui
+                        input(type="radio" name="opinionBool" value=false)
+                        label Non
+                        br
+                        
+                        p afficher les pubs ?
+                        input(type="radio" name="pictureBlockBool" value=true)
+                        label Oui
+                        input(type="radio" name="pictureBlockBool" value=false)
+                        label Non
+                            
+
+                //- section(class="cont-admin")
+                //-     h3 Pub block 
+                //-     form(method="POST")
+                //-         div(class="cont-input")
+                //-             input(type="text" placeholder='imgSrc' name="imgSrc")
+                //-             input(type="text" placeholder="titleBlock" name="titleBlock")
+                //-             input(type="text" placeholder="textBlock" name="textBlock")
+                //-         div 
+                //-             button(id="btn" type="submit" value="Submit") Modifier
+
+
+    include ../partials/footer
+    
+block script                     

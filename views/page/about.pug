@@ -1,0 +1,40 @@
+extends ../layout
+
+block link
+    link(rel='stylesheet', href='/stylesheets/about.css')
+
+block content
+    include ../partials/navigation
+
+    main 
+        div(class="container-all" id="container-all")
+
+            h2(id="h2") #{aboutText.titlePage}
+            
+            div(class="cont-txt-img" id="cont-txt-img")
+
+                section(class='cont-txt')
+                    
+                    h3(class="h3_title") #{aboutText.text1}
+                    
+                    div(class="cont-text-span") 
+                        span(id="big-span") #{aboutText.text2CatchPhrase}
+                        p(id="p") #{aboutText.text2}
+                    
+                    span(class="litle-span") #{aboutText.text3}
+                
+                section(class="cont-img")
+                    div(class="contenant")
+                        img(class="img" src="images/img_home22.jpg" alt="image de presentation")
+                        div(class="txt-center") 
+                            | "N'hesitez plus! 
+                            a(href="meeting" class="aContact") Contactez nous,
+                            |  afin que nous puissions fixer un rdv pour un devis gratuit."
+
+
+
+        //- include ../partials/opinion
+
+    include ../partials/footer  
+
+block script   
